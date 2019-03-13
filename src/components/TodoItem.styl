@@ -1,0 +1,43 @@
+.TODOItem
+  padding 8px
+  display: flex
+  justify-content space-between
+  border-bottom 1px solid #bfc1c7
+  height: 47px
+  box-sizing border-box
+
+  &:last-child
+    border none
+
+  &__label
+    flex 1 auto
+    padding: 0 12px;
+    font-size: 18px;
+    line-height: 29px;
+    overflow: hidden
+
+  &__toggle
+  &__delete-btn
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    outline none
+    cursor: pointer
+
+  &__toggle
+    -webkit-appearance: none;
+    padding: 8px;
+    border-radius: 50%;
+    background-color white
+    box-shadow: inset 0 0 7px 0px #2a2e362e;
+    border: 1px solid #2a2e3636;
+    ^[0].isCompleted &
+      background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fal' data-icon='check' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 398 552' class='svg-inline--fa fa-check fa-w-14 fa-7x'%3E%3Cpath fill='currentColor' d='M413.505 91.951L133.49 371.966l-98.995-98.995c-4.686-4.686-12.284-4.686-16.971 0L6.211 284.284c-4.686 4.686-4.686 12.284 0 16.971l118.794 118.794c4.686 4.686 12.284 4.686 16.971 0l299.813-299.813c4.686-4.686 4.686-12.284 0-16.971l-11.314-11.314c-4.686-4.686-12.284-4.686-16.97 0z'/%3E%3C/svg%3E");
+
+  &__delete-btn
+    border none
+    background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='far' data-icon='trash-alt' xmlns='http://www.w3.org/2000/svg' viewBox='0 -50 548 612' class='svg-inline--fa fa-trash-alt fa-w-14 fa-7x'%3E%3Cpath fill='rgb(255,82,82)' d='M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z'/%3E%3C/svg%3E");
+    padding: 0
